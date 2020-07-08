@@ -25,7 +25,8 @@ body {
 }
 
 nav {
-	margin: 100px;
+	margin-right: 20vw;
+	margin-left: 20vw;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: 1fr 1fr 50vw;
@@ -216,5 +217,11 @@ h1 {
 		grid-column: span 3;
 		grid-row: 3/4;
 		justify-self: center;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	#logo {
+		width: 150vw;
 	}
 }
