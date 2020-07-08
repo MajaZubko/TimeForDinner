@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <title>Time for dinner! - recipes for every cook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    
+    
+</head>
+<header>
+    <div class="logo">
+        <a href="/index.html">
+            <img id="logo" src="images/logo2.jpg" alt="Home">
+        </a>
+    </div>
+</header>
+<body>
+    <button id="backToTopButton"><i class="fas fa-angle-double-up"></i></button>
+    <nav>
+        <button id="randomButton">Random Meal</button>
+        <button id="categoriesAndAreasButton">Categories and Areas</button>
+        <input id="ingredientInput" placeholder="Search for an ingredient">
+    </nav>
+
+    <div class="mealBody is-hidden"></div>
+    <div class="categoriesAreasDiv is-hidden">
+        <h1>Categories</h1>
+        <div class="categoriesDiv"></div>
+        <h1>Areas</h1>
+        <div class="areasDiv"></div>
+    </div>
+    <div class="resultsDiv is-hidden">
+        <button id="backButton">Back to categories and areas</button>
+    </div>
+    
+    <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="backToTopBtnUtils.js"></script>
+    <script src="categoriesAreasUtils.js"></script>
+    <script src="mealUtils.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
