@@ -192,6 +192,21 @@ nav input {
   }
 }
 
+.categoriesAreasDiv {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
+}
+
+.categoriesAreasDiv h1 {
+  margin: 5vh 0;
+}
+
+.categoriesAreasDiv button {
+  margin: 8px;
+  font-weight: 400;
+}
+
 .resultsDiv {
   display: -ms-grid;
   display: grid;
