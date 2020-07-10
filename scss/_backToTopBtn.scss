@@ -1,0 +1,56 @@
+#backToTopButton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 15px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	color: $main-color;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	@include transitions;
+	transition-property: background-color, color;
+
+	&:hover,
+	&:focus {
+		background-color: $main-color;
+		color: $background-color;
+	}
+}
+
+/* Animations */
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+
+@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
