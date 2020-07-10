@@ -25,7 +25,8 @@ body {
 }
 
 nav {
-	margin: 100px;
+	margin-right: 100px;
+	margin-left: 100px;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: 1fr 1fr 50vw;
@@ -42,7 +43,7 @@ nav > button {
 
 nav > input {
 	width: 41vw;
-	margin: 20px;
+	margin: 5vw;
 	justify-self: center;
 }
 
@@ -217,4 +218,14 @@ h1 {
 		grid-row: 3/4;
 		justify-self: center;
 	}
+}
+
+@media screen and (max-width: 470px) {
+	#logo {
+		max-width: 150vw;
+	}
+
+	/* header {
+		overflow: hidden;
+	} */
 }
