@@ -17,25 +17,10 @@ nav {
 	grid-template-columns: 1fr 1fr 2fr;
 	margin: 3vh 10vw;
 
-	button {
-		background-color: $background-color;
-		border: none;
-		outline: none;
-		color: $main-color;
-		border: none;
-		cursor: pointer;
-		font-weight: 700;
-		margin: 1vh 0;
-	}
-
 	input {
 		text-indent: 10px;
 		margin: 3vh 0;
 	}
-}
-
-.is-hidden {
-	display: none;
 }
 
 @media (max-width: $wide-mobile) {

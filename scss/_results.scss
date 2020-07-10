@@ -1,1 +1,23 @@
+.resultsDiv {
+	display: grid;
+	grid-gap: 15px;
+	margin: 0 20vw 10vw 20vw;
 
+	.result {
+		display: grid;
+
+		overflow: hidden;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 15px;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+			grid-column: 1/2;
+		}
+
+		.resultButton {
+			grid-column: 2/3;
+		}
+	}
+}

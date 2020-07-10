@@ -61,7 +61,7 @@ const showCategoriesAreas = ({ categoriesArr, areasArr }) => {
 const resultLayout = ({ title, id, thumbnail }) => {
 	return `
 	<img src="${thumbnail}">
-	<button id="resultButton">${title}</button>
+	<button class="resultButton">${title}</button>
 	<p class="is-hidden">${id}</p>
 	`;
 };

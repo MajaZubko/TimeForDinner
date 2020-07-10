@@ -126,24 +126,9 @@ nav {
   margin: 3vh 10vw;
 }
 
-nav button {
-  background-color: #fffafa;
-  border: none;
-  outline: none;
-  color: #555555;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  margin: 1vh 0;
-}
-
 nav input {
   text-indent: 10px;
   margin: 3vh 0;
-}
-
-.is-hidden {
-  display: none;
 }
 
 @media (max-width: 750px) {
@@ -205,6 +190,37 @@ nav input {
   nav button {
     grid-column: span 2;
   }
+}
+
+.resultsDiv {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  margin: 0 20vw 10vw 20vw;
+}
+
+.resultsDiv .result {
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 15px;
+}
+
+.resultsDiv .result img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.resultsDiv .result .resultButton {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .mealBody {
@@ -296,4 +312,23 @@ nav input {
   .mealBody .instructions {
     grid-column: span 3;
   }
+}
+
+button {
+  background-color: #fffafa;
+  border: none;
+  outline: none;
+  color: #555555;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 1vh 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
 }
