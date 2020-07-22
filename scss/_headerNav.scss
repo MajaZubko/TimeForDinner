@@ -1,8 +1,17 @@
 header {
 	width: 100vw;
+	height: 12.5vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-	img {
-		width: 100vw;
+	a {
+		text-decoration: none;
+		font-family: 'Pacifico', cursive;
+		color: $main-color;
+		font-size: 2rem;
 	}
 }
 
@@ -24,18 +33,6 @@ nav {
 }
 
 @media (max-width: $wide-mobile) {
-	header {
-		width: 100vw;
-		overflow: hidden;
-		box-sizing: border-box;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		img {
-			width: 150vw;
-		}
-	}
 }
 
 @media (max-width: $medium-mobile) {
@@ -49,19 +46,6 @@ nav {
 }
 
 @media (max-width: $narrow-mobile) {
-	header {
-		width: 100vw;
-		overflow: hidden;
-		box-sizing: border-box;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		img {
-			width: 167vw;
-		}
-	}
-
 	nav {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
